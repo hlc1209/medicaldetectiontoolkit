@@ -122,7 +122,7 @@ class configs(DefaultConfigs):
 
         self.do_validation = True
         # decide whether to validate on entire patient volumes (like testing) or sampled patches (like training)
-        # the former is morge accurate, while the latter is faster (depending on volume size)
+        # the former is more accurate, while the latter is faster (depending on volume size)
         self.val_mode = 'val_patient' # one of 'val_sampling' , 'val_patient'
         if self.val_mode == 'val_patient':
             self.max_val_patients = None  # if 'None' iterates over entire val_set once.
